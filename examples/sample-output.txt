@@ -1,0 +1,11 @@
+VALID   examples/valid.json
+VALID   examples/compact.json
+INVALID examples/invalid-missing-comma.json:4:3: Expecting ',' delimiter
+    "private": false
+    ^
+INVALID examples/invalid-trailing-comma.json:4:1: Expecting property name enclosed in double quotes
+  }
+  ^
+INVALID examples/invalid-single-quotes.json:2:3: Expecting property name enclosed in double quotes
+    'name': 'example-site',
+    ^
